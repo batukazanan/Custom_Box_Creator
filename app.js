@@ -1,8 +1,8 @@
-//! **** SELECTION OPERATION ****
-
 //TODO 1- Yeni eklenen box sağ tarafta bir alana gelecek. Her eklenen kısım o alanda gözükecek. Üstüne tıklandığında silinecek
 //TODO 2- Eklenen box bilgileri bir object içinde tutulacak (örn: id: 1, color: red) ve console'a yazılacak.
-//TODO 3- Submit edildiğinde input valueleri sıfırlanacak.
+//-TODO 3- Submit edildiğinde input valueleri sıfırlanacak.
+
+//! **** SELECTION OPERATION ****
 
 
 let box_width = document.getElementById("box-width");
@@ -37,6 +37,20 @@ function box_creator(){
         border-color:${border_color.value};
 
         `;
+
+        clearInputs();
+
     }
+
+}
+
+function clearInputs() {
+
+    box_width.value = "";
+    box_height.value = "";
+    background_color.value = "";
+    border_width.value = "";
+    border_type.value = "";
+    border_color.value = "";
 
 }
