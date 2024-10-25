@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Box Creator</h1>
+    <div class="container">
+        <div class="selection-form">
+            <table cellpadding="10px" cellspacing="5px">
+                <tr>
+                    <td>Box Width</td>
+                    <td><input type="text" id="box-width" class="form-element"></td>
+                </tr>
+                <tr>
+                    <td>Box Height</td>
+                    <td><input type="text" id="box-height" class="form-element"></td>
+                </tr>
+                <tr>
+                    <td>Box Color</td>
+                    <td>
+                        <select id="background-color">
+                            <option value="" disabled selected>Select box color</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Box Border Width</td>
+                    <td>
+                        <select id="border-width" class="form-element">
+                            <option value="" disabled selected>Select border width</option>
+                            <option value="1px">1px</option>
+                            <option value="3px">3px</option>
+                            <option value="5px">5px</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Box Border Type</td>
+                    <td>
+                        <select id="border-type">
+                            <option value="" disabled selected>Select border type</option>
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Box Border Color</td>
+                    <td>
+                        <select name="" id="border-color">
+                            <option value="" disabled selected>Select border color</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" id="create-box">Create</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
