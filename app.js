@@ -44,6 +44,11 @@ function box_creator(){
 
 }
 
+if(box_creator == true){
+    console.log("başarılı");
+}
+
+
 function clearInputs() {
 
     box_width.value = "";
